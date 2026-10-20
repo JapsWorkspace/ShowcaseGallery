@@ -13,3 +13,83 @@ h1, h2, h3, .font-extrabold, .font-black { font-family: "Manrope", "DM Sans", sa
 body { min-width: 320px; min-height: 100vh; margin: 0; }
 button, input, textarea { font: inherit; }
 button { cursor: pointer; }
+
+/* Star Platinum-inspired midnight, violet, electric-blue, and gold palette. */
+:root { color-scheme: dark; }
+.app-shell {
+  color: #f2efff;
+  background:
+    radial-gradient(ellipse at 82% 2%, rgba(54, 132, 255, .18), transparent 34rem),
+    radial-gradient(ellipse at 18% -12%, rgba(137, 86, 255, .25), transparent 38rem),
+    #090916;
+}
+.app-shell nav.sticky {
+  border-color: rgba(164, 150, 225, .18) !important;
+  background: rgba(12, 11, 27, .88) !important;
+}
+.app-shell nav .bg-slate-100 { background: #1b1931 !important; }
+.app-shell nav .bg-indigo-600 {
+  background: linear-gradient(135deg, #7955e8, #4d75ff) !important;
+  box-shadow: 0 8px 24px rgba(104, 83, 230, .25) !important;
+}
+.app-shell nav .text-slate-500 { color: #aaa5c9 !important; }
+.app-shell nav button:hover { color: #fff !important; }
+.app-shell nav .text-indigo-600 { color: #c2aaff !important; }
+.app-shell main section.relative.mb-10 {
+  background: linear-gradient(120deg, #211341 0%, #322064 48%, #152d62 100%) !important;
+  box-shadow: 0 24px 70px rgba(43, 29, 103, .28) !important;
+}
+.app-shell main section.relative.mb-10 .text-cyan-200 { color: #f2cb72 !important; }
+.app-shell main section.relative.mb-10 .bg-white {
+  background: #f2cb72 !important;
+  color: #241a45 !important;
+}
+.app-shell main .text-indigo-600 { color: #b89cff !important; }
+.app-shell main .text-slate-900 { color: #f3f0ff !important; }
+.app-shell main .text-slate-700 { color: #ddd7f5 !important; }
+.app-shell main .text-slate-500 { color: #aaa5c5 !important; }
+.app-shell article.group {
+  border-color: #302b50 !important;
+  background: linear-gradient(155deg, #19172c, #11101f) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .22) !important;
+}
+.app-shell article.group:hover { box-shadow: 0 18px 42px rgba(93, 65, 184, .22) !important; }
+.app-shell article.group > .relative { background: #211f38 !important; }
+.app-shell article.group > .relative > span {
+  background: rgba(18, 16, 36, .9) !important;
+  color: #d3c3ff !important;
+}
+.app-shell article.group h3 { color: #f1edff !important; }
+.app-shell article.group p { color: #aaa5c5 !important; }
+.app-shell form.rounded-3xl {
+  border-color: #332e53 !important;
+  background: linear-gradient(155deg, #19172d, #121120) !important;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, .24) !important;
+}
+.app-shell form label { color: #ded9f4 !important; }
+.app-shell form input, .app-shell form textarea {
+  border-color: #393455 !important;
+  background: #0e0d1a !important;
+  color: #f4f1ff !important;
+}
+.app-shell form input::placeholder, .app-shell form textarea::placeholder { color: #77728f !important; }
+.app-shell form input:focus, .app-shell form textarea:focus {
+  border-color: #9a7bff !important;
+  --tw-ring-color: rgba(142, 111, 255, .2) !important;
+}
+.app-shell form button[type="submit"] {
+  background: linear-gradient(110deg, #7651e8, #4d75ff) !important;
+  box-shadow: 0 10px 24px rgba(103, 77, 223, .22) !important;
+}
+.app-shell form button[type="submit"]:hover { filter: brightness(1.12); }
+.app-shell form button:not([type="submit"]):hover { color: #eee8ff !important; }
+.app-shell main .border-dashed {
+  border-color: #40395f !important;
+  background: rgba(24, 22, 42, .78) !important;
+}
+.app-shell main .animate-pulse { background: #1a1830 !important; }
+.app-shell .bg-rose-50 { border-color: #5b293f !important; background: #2a1422 !important; color: #ffc1d2 !important; }
+.app-shell .bg-emerald-50 { border-color: #225443 !important; background: #10271f !important; color: #a8f0cf !important; }
+.app-shell footer { border-color: #292640 !important; color: #817b9d !important; }
+.app-shell footer .text-slate-500 { color: #b1a9d2 !important; }
+.app-shell :focus-visible { outline: 2px solid #b99cff; outline-offset: 3px; }

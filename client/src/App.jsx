@@ -55,7 +55,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_#eef2ff_0,_#f8fafc_34rem)] text-slate-800">
+    <div className="app-shell min-h-screen">
       <Navbar view={view} onChangeView={(next) => { setView(next); setEditingProduct(null); setError(""); }} />
       {error && <div className="mx-auto mt-5 flex max-w-7xl items-start gap-3 rounded-2xl border border-rose-200 bg-rose-50 px-5 py-4 text-rose-800 sm:mx-8"><AlertCircle className="mt-0.5 shrink-0" size={19} /><div className="flex-1"><p className="font-bold">Could not reach the product API</p><p className="mt-1 text-sm leading-6">{error}</p></div><button onClick={loadProducts} aria-label="Retry loading products" className="rounded-lg p-2 hover:bg-rose-100"><RotateCw size={17} /></button></div>}
       {view === "gallery" ? <GalleryPage products={products} loading={loading} /> : <ManagePage products={products} editingProduct={editingProduct} onSave={saveProduct} onCancel={() => setEditingProduct(null)} onEdit={startEdit} onDelete={removeProduct} />}
