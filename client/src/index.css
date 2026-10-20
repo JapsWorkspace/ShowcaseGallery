@@ -33,6 +33,7 @@ button { cursor: pointer; }
   box-shadow: 0 8px 24px rgba(104, 83, 230, .25) !important;
 }
 .app-shell nav .text-slate-500 { color: #aaa5c9 !important; }
+.app-shell nav .text-slate-900 { color: #f3f0ff !important; }
 .app-shell nav button:hover { color: #fff !important; }
 .app-shell nav .text-indigo-600 { color: #c2aaff !important; }
 .app-shell main section.relative.mb-10 {
